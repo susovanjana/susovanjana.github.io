@@ -43,13 +43,13 @@ display: block;
 img {
   border-radius: 50%;
 }
-
+/*border:1px solid  #666666;*/
  .divTable
     {
         display:  table;
         width:auto;
-        background-color:#eee;
-        border:1px solid  #666666;
+        background-color:#DAF7A6 ;
+        
         border-spacing:5px;/*cellspacing:poor IE support for  this*/
        /* border-collapse:separate;*/
     }
@@ -59,13 +59,18 @@ img {
        display:table-row;
        width:auto;
     }
-
+.headRow
+    {
+       display:table-row;
+       width:auto;
+	   font-weight:bold
+    }
     .divCell
     {
         float:left;/*fix for  buggy browsers*/
         display:table-column;
         width:200px;
-        background-color:#ccc;
+        background-color:#DAF7A6;
     }
 </style>
 <script>
@@ -77,7 +82,7 @@ alert("My Page is Best Viewed with Firefox or Chrome Browsers.");
 </head>
 <body>
 <div class="navbar">
-<table border="0" style="font-family: Century Gothic;font-size: 17px;">
+<table border="0" style="font-family: Century Gothic;font-size: 15px;">
 	<tr>
 		<td><a href="https://susovanjana.github.io" target="_top"> <img src="img/pp.jpg" alt="Avatar" style="width:150px;height:150px;"></a></td>
 		<td><p align="left" ><br><br>Susovan Jana<br> Ph.D. Scholar (Engineering), Jadavpur University</p> </td>
@@ -182,26 +187,23 @@ alert("My Page is Best Viewed with Firefox or Chrome Browsers.");
 <div id="c7" class="segment"><b><br>Academics</b></div>
     <div class="divTable">
              <div class="headRow">
-                <div class="divCell" align="center">Customer ID</div>
-                <div  class="divCell">Customer Name</div>
-                <div  class="divCell">Customer Address</div>
+                <div class="divCell" >Degree</div>
+                <div  class="divCell">Specialization</div>
+                <div  class="divCell">College/University</div>
+				<div  class="divCell">Passing Year</div>
              </div>
             <div class="divRow">
-                  <div class="divCell">001</div>
-                <div class="divCell">002</div>
-                <div class="divCell">003</div>
+                <div class="divCell">M.Tech</div>
+                <div class="divCell">I.T(Courseware Engineering)</div>
+                <div class="divCell">Jadavpur University</div>
+				<div class="divCell">2014</div>
             </div>
             <div class="divRow">
-                <div class="divCell">xxx</div>
-                <div class="divCell">yyy</div>
-                <div class="divCell">www</div>
-           </div>
-            <div class="divRow">
-                <div class="divCell">ttt</div>
-                <div class="divCell">uuu</div>
-                <div class="divCell">Mkkk</div>
-           </div>
-
+                <div class="divCell">B.Tech</div>
+                <div class="divCell">Information Technology</div>
+                <div class="divCell">Govt. College of Engg. & Textile Technology, Serampore</div>
+				<div class="divCell">2012</div>
+            </div>
       </div>
 
 <table style="width:80%;font-family: Century Gothic;font-size: 15px;"" >
