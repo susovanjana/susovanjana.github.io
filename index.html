@@ -1,122 +1,265 @@
-Skip to content
-Search or jump to…
 
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@susovanjana 
-susovanjana
-/
-susovanjana.github.io
-1
-00
- Code
- Issues 0
- Pull requests 0 Actions
- Projects 0
- Wiki
- Security 0
- Insights
- Settings
-susovanjana.github.io
-/
-index.html
- 
-
-1
-​
-2
 <html>
-3
 <head>
-4
 <meta name="viewport" content="width=device-width, initial-scale=1">
-5
 <title>Susovan Jana</title> <link rel="icon" href="img/title.png" type="image/x-icon">
-6
 <style type="text/css">
-7
-body ,div{
-8
-        background-color: #DAF7A6 ;
-9
-        font-family: Century Gothic;
-10
-        font-size: 15px;
-11
-        }
-12
-​
-13
+body ,div,table{
+	background-color: #DAF7A6 ;
+	font-family: Century Gothic;
+	font-size: 15px;
+	text-align: justify
+	}
+
 .navbar {
-14
     overflow: hidden;
-15
     background-color: #DAF7A6;
-16
     position: fixed; /* Set the navbar to fixed position */
-17
     top: 0; /* Position the navbar at the top of the page */
-18
     width: 100%; /* Full width */
-19
-        }
-20
+	}
 /* Links inside the navbar */
-21
 .navbar a {
-22
-        display: block;
-23
+	display: block;
     float: left;
-24
     display: block;
-25
     color: #f2f2f2;
-26
     text-align: center;
-27
     text-decoration: none;
-28
-        }
-29
-        
-30
+	}
+	
 /* Change background on mouse-over */
-31
 .navbar a:hover {
-32
     background: #FF5733;
-33
     color: black;
-34
-        }
-35
-        
-36
+	}
+	
 .main {
-37
     margin-top: 170px; /* Add a top margin to avoid content overlay */
-@susovanjana
-Commit changes
-Commit summary
-Update index.html
-Optional extended description
-Add an optional extended description…
- Commit directly to the master branch.
- Create a new branch for this commit and start a pull request. Learn more about pull requests.
- 
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+	}
+	
+.segment:before { 
+    display: block; 
+    content: " "; 
+    height: 170px;      /* Give height of your fixed element */
+    margin-top: -170px; /* Give negative margin of your fixed element */    
+    visibility: hidden; 
+	}
+
+/*circular profile image*/
+img {
+	border-radius: 50%;
+	}
+	/*border:1px solid  #666666;*/
+
+</style>
+
+<script>
+function inst()
+{
+alert("My Page is Best Viewed with Firefox or Chrome Browsers.");
+}
+</script>
+
+</head>
+<body>
+<div class="navbar">
+<table border="0" style="font-family: Century Gothic;font-size: 15px;">
+	<tr>
+		<td><a href="https://susovanjana.github.io" target="_top"> <img src="img/pp.jpg" alt="Avatar" style="width:150px;height:150px;"></a></td>
+		<td><p align="left" ><br><br>Susovan Jana<br> Ph.D. Scholar (Engineering), Jadavpur University</p> </td>
+	</tr>
+</table>
+
+<table  class="header" id="myHeader" style="width:100%;background-color: #555;text-align: justify;font-family: Century Gothic;font-size: 15px;">	
+	<tr>
+        <td><a href="#c1" >Home</a></td>
+		<td><a href="#c2" >Expertise</a></td>
+        <td><a href="#c3" >Work Experience</a></td>
+		<td><a href="#c4" >Research Interests</a></td>
+		<td><a href="#c5" >Conference/Seminar/Workshop</a></td>
+        <td><a href="#c6" >Publications</a></td>
+        <td><a href="#c7" >Academics</a></td>
+		<td><a href="#c8" >Awards & Acievements</a></td>
+		<td><a href="#c9" >Knowledge Repository</a></td>
+        <td><a href="#c10" >Contacts </a></td>
+	</tr>
+</table>
+</div>
+<div class="main">
+<br>
+<br>
+<div id="c1" class="segment"><i><br>“Talk to yourself at least once in a Day, otherwise you may miss a meeting with an EXCELLENT person in this World.” - Swami Vivekananda</i></div>
+
+<div id="c2" class="segment"><b><br>Subjects of Teaching</b></div>
+<ul >
+	<li>Digital Image Processing </li>
+	<li>Multimedia Technology</li>
+	<li>Database Management System </li>
+	<li>Operating System </li>
+	<li>Compiler</li>
+	<li>C Language</li>
+	<li>Data Structure </li>
+	<li>Core Java </li>
+	<li>Advanced Java </li>
+	<li>Web Technology </li>
+</ul>
+
+<div id="c3" class="segment"><b><br>Work Experience</b></div>
+<ul>
+	<li>Senior Research Fellow, <a href="http://www.jaduniv.edu.in/" target="garbage">Jadavpur University</a> (2018 - )</li>
+	<li>Junior Research Fellow, <a href="http://www.jaduniv.edu.in/" target="garbage">Jadavpur University</a> (2016 - 2018)</li>
+	<li>Application Developer, <a href="https://www.ibm.com/in-en/" target="garbage">IBM India Pvt. Ltd.</a> (2014 - 2016)</li>
+</ul>
+
+<div id="c4" class="segment"><b><br>Research Interests</b></div>
+<ul>
+	<li>Image Processing</li> 
+	<li>Pattern Recognition</li>
+	<li>Medical Imaging</li>
+	<li>Machine Learning</li>
+	<li>Computer Vision</li>
+	<li>Multimedia Information Processing</li>
+	<li>Soft Computing</li>
+	<li>Mobile Application</li>
+</ul> 
+
+<div id="c5" class="segment"><b><br>Conference / Seminar / Workshop</b></div>
+<div>Participated & Presented Paper</div>
+<ol>
+	<li>International Conference on Computer Science, Engineering, and Application - ICCSEA-2020, GIET University, Gunupur, India, March 13-14, 2020. (Online)</li>
+	<li>International Conference on Computing, Power and Communication Technologies - GUCON 2019, Radisson Blu Hotel & Galgotias University, Greater Noida, NCR New Delhi, India, Sept. 27-28, 2019.</li>
+	<li>International Conference on Computational Intelligence, Communications, and Business Analytics - CICBA 2018, Kalyani Government Engineering College, Kalyani, India, July 27-28, 2018.</li>
+	<li>International Conference on Computer, Electrical & Communication Engineering - ICCECE 2017, Techno India University, Kolkata, India, Dec. 22-23, 2017.</li>
+	<li>International Conference on Computational Intelligence, Communications, and Business Analytics - CICBA 2017, Calcutta Business School, Kolkata, India, March 24-25, 2017.</li>
+	<li>International Conference on Applications and Innovations in Mobile Computing - AIMoC 2015, Jadavpur University, Kolkata, India, Feb. 12-14, 2015.</li>
+	
+</ol>
+
+<div>Only Participated</div>
+<ol>
+	<li>Workshop on Writing Quality Research Articles for Publications, Jadavpur University, Kolkata, India, Jan. 13-14, 2020.</li>
+	<li>One-week Short Term Course on “A pragmatic approach towards Machine Learning”, Jadavpur University, Kolkata, India, Jan. 3-9, 2020.</li>
+	<li>2-day workshop on SAS Programming and SAS Predictive Modeling, Institute of Business Management, Kolkata, India, Nov. 16-17, 2018.</li>
+	<li>International Seminar on Computational Intelligence, Jadavpur University, Kolkata, India, Dec. 16, 2017.</li>
+	<li>Workshop on Fire Safety Protection & Uses of Fire Extinguishers, Jadavpur University,Kolkata, India, March 31, 2017.</li>
+	<li>Third Student Conference on The Future University: Access, Quality, Relevance, Jadavpur University, Kolkata, India, July 14 - 15, 2016.</li>
+	<li>Second Academic Conference on Breaking Boundaries: Interdisciplinary, E-learning, and Universities without Walls, Jadavpur University, Kolkata, India, Jan. 7 - 8, 2016.</li>
+	
+</ol>
+
+<div id="c6" class="segment"><b><br>Publications</b></div>
+<div>Book Chapters</div>
+<ol>
+	<li>S. Jana, R. Parekh, and B. Sarkar, “A semi-supervised approach for automatic detection and segmentation of optic disc from retinal fundus image,” HANDBOOK OF COMPUTATIONAL INTELLIGENCE IN BIOMEDICAL ENGINEERING AND HEALTHCARE, Elsevier, 2020. (In Press)</li>
+	<li>S. Jana, R. Parekh, and B. Sarkar, “Automatic Classification of Fruits and Vegetables: A Texture-Based Approach,” Studies in Computational Intelligence, pp. 71–89, 2020. <a href="https://doi.org/10.1007/978-981-15-1041-0_5" target="garbage">https://doi.org/10.1007/978-981-15-1041-0_5</a></li>    
+</ol>
+<div>Research Articles in Journals</div>
+<ol>
+	<li>S. Jana, R. Parekh, and B. Sarkar, “A De novo approach for automatic volume and mass estimation of fruits and vegetables,” Optik, vol. 200, p. 163443, Jan. 2020. <a href="https://doi.org/10.1016/j.ijleo.2019.163443" target="garbage">https://doi.org/10.1016/j.ijleo.2019.163443</a></li>
+	<li>S. Jana and R. Parekh, “Intra-class Recognition of Fruits using Color and Texture Features with Neural Classifiers,” International Journal of Computer Applications, vol. 148, no. 11, pp. 1–6, Aug. 2016. <a href="https://doi.org/10.5120/ijca2016911283" target="garbage">https://doi.org/10.5120/ijca2016911283</a></li>
+
+</ol>
+<div>Research Articles in Conferences</div>
+<ol>
+	<li>U. R. Chowdhury, S. Jana, and R. Parekh, “Automated System for Indian Banknote Recognition using Image Processing and Deep Learning,” 2020 International Conference on Computer Science, Engineering, and Application, IEEE, March, 2020. (In Press)</li>
+	<li>S. Jana, R. Parekh, and B. Sarkar, “Volume estimation of non-axisymmetric fruits and vegetables using image analysis,” 2019 International Conference on Computing, Power and Communication Technologies, IEEE, Sept. 2019. <a href="https://ieeexplore.ieee.org/document/8940598." target="garbage">https://ieeexplore.ieee.org/document/8940598.</a></li>
+	<li>S. Jana, R. Parekh, and B. Sarkar, “An Approach Towards Classification of Fruits and Vegetables Using Fractal Analysis,” Computational Intelligence, Communications, and Business Analytics, Springer, pp. 167–180, 2019. <a href="https://doi.org/10.1007/978-981-13-8581-0_14" target="garbage">https://doi.org/10.1007/978-981-13-8581-0_14</a></li> 
+	<li>C. Ganguly, S. Jana, and R. Parekh, “Geometrical Transformation Invariant Approach for Classification of Signatures Using k-NN Classifier,” Computational Intelligence, Communications, and Business Analytics, Springer, pp. 106–120, 2019. <a href="https://doi.org/10.1007/978-981-13-8578-0_9" target="garbage">https://doi.org/10.1007/978-981-13-8578-0_9</a></li>
+	<li>S. Pal, S. Jana, and R. Parekh, “Super-Resolution of Textual Images using Autoencoders for Text Identification,” 2018 Applied Signal Processing Conference (ASPCON), IEEE, Dec. 2018. <a href="https://doi.org/10.1109/aspcon.2018.8748679" target="garbage">https://doi.org/10.1109/aspcon.2018.8748679</a></li>
+	<li>M. Tewari, S. Jana, and R. Parekh, “An Automated System for Image Reconstruction from Distorted Image Fragments,” 2017 International Conference on Computer, Electrical & Communication Engineering (ICCECE), IEEE, Dec. 2017. <a href="https://doi.org/10.1109/iccece.2017.8526211" target="garbage">https://doi.org/10.1109/iccece.2017.8526211</a></li>
+	<li>K. Hossain, S. Jana, S. Mukherjee, and R. Parekh, “Secured transmission of sensitive images of skin diseases using steganography and cryptography,” 2017 Calcutta Conference (CALCON), IEEE, Dec. 2017. <a href="https://doi.org/10.1109/calcon.2017.8280703" target="garbage">https://doi.org/10.1109/calcon.2017.8280703</a></li>
+	<li>K. Hossain, S. Jana, S. Mukherjee, and R. Parekh, “A novel approach to secure biomedical images and videos for transmission,” 2017 Third International Conference on Research in Computational Intelligence and Communication Networks (ICRCICN), IEEE, Nov. 2017. <a href="https://doi.org/10.1109/icrcicn.2017.8234492" target="garbage">https://doi.org/10.1109/icrcicn.2017.8234492</a></li>
+	<li>S. Jana and R. Parekh, “Shape-based Fruit Recognition and Classification,” Computational Intelligence, Communications, and Business Analytics, Springer, pp. 184–196, 2017.	<a href="https://doi.org/10.1007/978-981-10-6430-2_15" target="garbage">https://doi.org/10.1007/978-981-10-6430-2_15</a></li>
+	<li>S. Jana, S. Basak, and R. Parekh, “Automatic fruit recognition from natural images using color and texture features,” 2017 Devices for Integrated Circuit (DevIC), IEEE, Mar. 2017. <a href="https://doi.org/10.1109/devic.2017.8074025" target="garbage">https://doi.org/10.1109/devic.2017.8074025</a></li>
+	<li>S. Jana and M. Chattopadhyay, “An event-driven university campus navigation system on android platform,” 2015 Applications and Innovations in Mobile Computing (AIMoC), IEEE, Feb. 2015. <a href="https://doi.org/10.1109/aimoc.2015.7083850" target="garbage">https://doi.org/10.1109/aimoc.2015.7083850</a></li> 
+</ol>
+
+<div id="c7" class="segment"><b><br>Academics</b></div>
+    <table style="width:60%;text-align: justify;font-family: Century Gothic;font-size: 15px;">
+             <tr>
+                <td><b>Degree</td>
+                <td><b>Specialization</td>
+                <td><b>College/University</td>
+				<td><b>Passing Year</td>
+             </tr>
+            <tr>
+                <td>M.Tech</td>
+                <td>I.T(Courseware Engineering)</td>
+                <td>Jadavpur University</td>
+				<td>2014</td>
+            </tr>
+            <tr>
+                <td>B.Tech</td>
+                <td>Information Technology</td>
+                <td>Govt. College of Engg. & Textile Technology, Serampore</td>
+				<td>2012</td>
+            </tr>
+      </table>
+	  
+								      
+<div id="c8" class="segment"><b><br>Awards & Acievements</b></div>
+<table style="width:100%;text-align: justify;font-family: Century Gothic;font-size: 15px;" >
+	<tr>
+    		<td><b>Year</td>
+    		<td><b>Awards & Acievements</td>  
+  	</tr>
+	<tr>
+    		<td>2018</td>
+    		<td>Invited Lecture for the Induction Programme  of UG Engineering 1st year, Jadavpur University</td>  
+  	</tr>
+	<tr>
+    		<td>2016-17</td>
+    		<td>Invited Guest Faculty in National Institute of Electronics & Information Technology, Kolkata</td>  
+  	</tr>
+	<tr>
+    		<td>2015</td>
+    		<td>Deep Skill Adder for demonstrating the practice: Share Expertise in IBM India Pvt. Ltd.</td>  
+  	</tr>
+	<tr>
+    		<td>2015</td>
+    		<td>The Best of IBM Honour for contribution towards the Policy Center Project in IBM India Pvt. Ltd.</td>  
+  	</tr>
+	<tr>
+    		<td>2015</td>
+    		<td>Manager’s Choice Award for demonstrating the practice: Show Personal Interest in IBM India Pvt. Ltd.</td>  
+  	</tr>
+	<tr>
+			<td>2015</td>
+    		<td>Manager’s Choice Award for demonstrating the practice: Put the Client First in IBM India Pvt. Ltd.</td>  
+  	</tr>
+	<tr>
+    		<td>2014</td>
+    		<td>Ranked 2nd in University</td>  
+  	</tr>
+	<tr>
+    		<td>2012</td>
+    		<td>Qualified GATE in Computer Science</td>  
+  	</tr>
+	<tr>
+			<td>2008-11</td>
+    		<td>MCM Scholarship from Govt. of West Bengal in consecutive 4 years of B. Tech</td>  
+  	</tr>
+	<tr>
+			<td>2008-11</td>
+    		<td>Full/Half Free Studentship in consecutive 4 years of B. Tech for being in TOP 6 position</td>  
+  	</tr>
+</table>
+	
+
+<div id="c9" class="segment"><b><br>Knowledge Repository</b></div>
+<a href="files\Beginer's Guide to MySQL.pdf" target="garbage">Beginer's Guide to MySQL</a> &nbsp
+<br>	
+	
+<div id="c10" class="segment"><b><br>Contacts</b></div>
+<p>Website: <a href="susovanjana.github.io" target="_top">susovanjana.github.io</a>
+<br>Email(Personal): jana.susovan2@gmail.com
+<br>Email(Official): susovanjana.education.rs@jadavpuruniversity.in
+<br>Mobile: +919748052998</p>
+<br>
+<a href="https://www.researchgate.net/profile/Susovan_Jana4" target="garbage">Research Gate</a> &nbsp <a href="https://scholar.google.co.in/citations?user=dk2zK8IAAAAJ&hl=en" target="garbage">Google Scholar</a>&nbsp <a href="https://orcid.org/0000-0002-1466-5308" target="garbage">ORCiD</a>
+<br>
+<div><i> Thank You. Visit Again.</i></div>
+</div>
+</body>
+</html>
