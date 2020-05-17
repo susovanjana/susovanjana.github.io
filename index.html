@@ -4,45 +4,65 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Susovan Jana</title> <link rel="icon" href="img/title.png" type="image/x-icon">
 <style type="text/css">
-body ,div,table{
+body,div,table{
 	background-color: #DAF7A6 ;
 	font-family: Century Gothic;
 	font-size: 15px;
 	text-align: justify
 	}
 
-.navbar {
+
+
+.topnav {
     overflow: hidden;
     background-color: #DAF7A6;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-	}
-/* Links inside the navbar */
-.navbar a {
-	display: block;
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    text-decoration: none;
-	}
-	
-/* Change background on mouse-over */
-.navbar a:hover {
-    background: #FF5733;
-    color: black;
-	}
+}
+
+.topnav #myLinks {
+  display: none; 
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+
+#myLinks a:hover {
+  background-color: #FF5733;
+  color: white;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
 	
 .main {
-    margin-top: 170px; /* Add a top margin to avoid content overlay */
+    margin-top: 200px; /* Add a top margin to avoid content overlay */
 	}
 	
 .segment:before { 
     display: block; 
     content: " "; 
-    height: 170px;      /* Give height of your fixed element */
-    margin-top: -170px; /* Give negative margin of your fixed element */    
+    height: 200px;      /* Give height of your fixed element */
+    margin-top: -200px; /* Give negative margin of your fixed element */    
     visibility: hidden; 
 	}
 
@@ -59,34 +79,53 @@ function inst()
 {
 alert("My Page is Best Viewed with Firefox or Chrome Browsers.");
 }
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 </script>
 
 </head>
 <body>
-<div class="navbar">
-<table border="0" style="font-family: Century Gothic;font-size: 15px;">
-	<tr>
-		<td><a href="https://susovanjana.github.io" target="_top"> <img src="img/pp.jpg" alt="Avatar" style="width:150px;height:150px;"></a></td>
-		<td><p align="left" ><br><br>Susovan Jana<br> Ph.D. Scholar (Engineering), Jadavpur University</p> </td>
-	</tr>
-</table>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<table  class="header" id="myHeader" style="width:100%;background-color: #555;text-align: justify;font-family: Century Gothic;font-size: 15px;">	
-	<tr>
-        <td><a href="#c1" >Home</a></td>
-		<td><a href="#c2" >Expertise</a></td>
-        <td><a href="#c3" >Work Experience</a></td>
-		<td><a href="#c4" >Research Interests</a></td>
-		<td><a href="#c5" >Conference/Seminar/Workshop</a></td>
-        <td><a href="#c6" >Publications</a></td>
-        <td><a href="#c7" >Academics</a></td>
-		<td><a href="#c8" >Awards & Acievements</a></td>
-		<td><a href="#c9" >Knowledge Repository</a></td>
-        <td><a href="#c10" >Contacts </a></td>
-	</tr>
+<div class="topnav">
+<table  >
+<tr>
+	<td><a href="https://susovanjana.github.io" target="_top" ><img src="img/pp.jpg" alt="Avatar" style="width:150px;height:150px;"></a></td>
+	<td><p align="left" ><br><br>Susovan Jana<br> Ph.D. Scholar (Engineering), Jadavpur University</p> </td></tr>
+</tr>
+
+<tr>
+	<td colspan="2">
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+	</a>
+	<div id="myLinks">
+    <a href="#c1" onclick="myFunction()">Home</a>
+	<a href="#c2" onclick="myFunction()">Expertise</a>
+    <a href="#c3" onclick="myFunction()">Work Experience</a>
+	<a href="#c4" onclick="myFunction()">Research Interests</a>
+	<a href="#c5" onclick="myFunction()">Conference/Seminar/Workshop</a>
+    <a href="#c6" onclick="myFunction()">Publications</a>
+    <a href="#c7" onclick="myFunction()">Academics</a>
+	<a href="#c8" onclick="myFunction()">Awards & Acievements</a>
+	<a href="#c9" onclick="myFunction()">Knowledge Repository</a>
+    <a href="#c10" onclick="myFunction()">Contacts </a>
+	</div>
+	</td>
+</tr>
 </table>
 </div>
+
 <div class="main">
+<br>
 <br>
 <br>
 <div id="c1" class="segment"><i><br>“Talk to yourself at least once in a Day, otherwise you may miss a meeting with an EXCELLENT person in this World.” - Swami Vivekananda</i></div>
@@ -260,6 +299,7 @@ alert("My Page is Best Viewed with Firefox or Chrome Browsers.");
 <a href="https://www.researchgate.net/profile/Susovan_Jana4" target="garbage">Research Gate</a> &nbsp <a href="https://scholar.google.co.in/citations?user=dk2zK8IAAAAJ&hl=en" target="garbage">Google Scholar</a>&nbsp <a href="https://orcid.org/0000-0002-1466-5308" target="garbage">ORCiD</a>
 <br>
 <div><i> Thank You. Visit Again.</i></div>
+<div>© Susovan Jana, 2020</div>
 </div>
 </body>
 </html>
