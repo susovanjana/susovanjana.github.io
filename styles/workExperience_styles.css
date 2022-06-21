@@ -1,0 +1,71 @@
+.work_experience {
+  margin: 8rem 0;
+}
+
+.work_experience_head {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 100;
+  color: #fca475;
+  margin-bottom: 3rem;
+}
+
+.work_experience_head::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 18rem;
+  height: 0.06rem;
+  background-color: #5a5a5c;
+  top: -2rem;
+  margin-left: 26.5rem;
+}
+
+.work_list {
+  margin: 0 4rem;
+  list-style-type: none;
+}
+
+.work_list li {
+  display: flex;
+  align-items: center;
+  width: 60rem;
+  margin: 2rem 0;
+}
+
+.work_list li img {
+  width: 15rem;
+}
+
+.work_role {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fca475;
+}
+
+.role_det {
+  /* margin-left: 1rem; */
+  font-size: 1rem;
+}
+
+.role_det a {
+  color: aqua;
+  transition: color 0.1s linear;
+}
+
+.role_det a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 350px) {
+  .work_list li {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .work_experience_head::after {
+    display: none;
+  }
+}

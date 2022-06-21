@@ -1,0 +1,45 @@
+footer {
+  margin: 8rem 0 0 0;
+  border-top: 1px solid #daf7a6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.research_logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+
+.social_logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.6rem;
+  width: 15rem;
+  margin-bottom: 2rem;
+}
+
+.footer_text {
+  margin-bottom: 2rem;
+}
+
+.last_text {
+  color: #fca475;
+  font-size: 1.2rem;
+}
+
+footer .social_logos a i {
+  cursor: pointer;
+  transition: all 0.1s linear;
+  color: #daf7a6;
+}
+
+footer .social_logos a i:hover {
+  color: white;
+}

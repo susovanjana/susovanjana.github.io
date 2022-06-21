@@ -1,0 +1,56 @@
+.awards_achievements {
+  margin: 8rem 0;
+}
+
+.awards_head {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 100;
+  color: #fca475;
+  margin-bottom: 3rem;
+}
+
+.awards_head::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 18rem;
+  height: 0.06rem;
+  background-color: #5a5a5c;
+  top: -2rem;
+  margin-left: 41rem;
+}
+
+.awards_achievements ul {
+  margin: 0 8rem;
+  list-style-type: none;
+}
+
+.awards_achievements ul li {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.awards_achievements ul li p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.awards_achievements ul li .a_year,
+.awards_achievements ul li .a_body {
+  color: aqua;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.aca_year {
+  color: #fca475;
+}
+
+@media screen and (max-width: 350px) {
+  .awards_head::after {
+    display: none;
+  }
+}

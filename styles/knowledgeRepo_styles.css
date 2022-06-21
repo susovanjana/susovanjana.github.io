@@ -1,0 +1,54 @@
+.knowledge_repo {
+  margin: 8rem 0;
+}
+
+.knowledge_repo_head {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 100;
+  color: #fca475;
+  margin-bottom: 3rem;
+}
+
+.knowledge_repo_head::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 18rem;
+  height: 0.06rem;
+  background-color: #5a5a5c;
+  top: -2rem;
+  margin-left: 36rem;
+}
+
+.repo_content {
+  margin: 0 4rem;
+}
+
+.repo_content a {
+  color: #daf7a6;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.repo_content a i {
+  font-size: 4rem;
+  margin-right: 1rem;
+}
+
+.repo_content a span {
+  text-decoration: underline;
+}
+
+.repo_content a span:hover {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 350px) {
+  .knowledge_repo_head::after {
+    display: none;
+  }
+}

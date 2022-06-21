@@ -1,0 +1,51 @@
+.conference {
+  margin: 8rem 0;
+}
+
+.conference_head {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 100;
+  color: #fca475;
+  margin-bottom: 3rem;
+}
+
+.conference_head::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 18rem;
+  height: 0.06rem;
+  background-color: #5a5a5c;
+  top: -2rem;
+  margin-left: 52rem;
+}
+
+.participated {
+  margin: 0 2rem;
+}
+
+.participated h3 {
+  color: aqua;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.conf_att {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* gap: 2rem; */
+  margin: 0 2rem;
+}
+
+.conf_att ul li {
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 610px) {
+  .conference_head::after {
+    display: none;
+  }
+}

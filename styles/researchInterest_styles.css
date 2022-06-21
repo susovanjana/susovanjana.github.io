@@ -1,0 +1,42 @@
+.research_interest {
+  margin: 8rem 0;
+}
+
+.research_interest_head {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 100;
+  color: #fca475;
+  margin-bottom: 3rem;
+}
+
+.research_interest_head::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 18rem;
+  height: 0.06rem;
+  background-color: #5a5a5c;
+  top: -2rem;
+  margin-left: 30rem;
+}
+
+.research_interest_uls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.research_interest ul {
+  margin: 0 4rem;
+}
+
+.research_interest ul li {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 350px) {
+  .research_interest_head::after {
+    display: none;
+  }
+}

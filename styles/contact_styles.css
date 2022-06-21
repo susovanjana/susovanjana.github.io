@@ -1,0 +1,60 @@
+.contact {
+  margin: 8rem 0;
+}
+
+.contact_head {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 100;
+  color: #fca475;
+  margin-bottom: 3rem;
+}
+
+.contact_head::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 18rem;
+  height: 0.06rem;
+  background-color: #5a5a5c;
+  top: -2rem;
+  margin-left: 20rem;
+}
+
+.contact_body {
+  margin: 0 4rem;
+  text-align: center;
+}
+
+.contact_class {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.contact_class span {
+  color: #fca475;
+  font-weight: 300;
+}
+
+.msg_me_btn {
+  color: #daf7a6;
+  background: transparent;
+  border: 2px solid #daf7a6;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+.msg_me_btn:hover {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 350px) {
+  .contact_head::after {
+    display: none;
+  }
+}

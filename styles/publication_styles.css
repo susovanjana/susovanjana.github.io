@@ -1,0 +1,61 @@
+.publications {
+  margin: 8rem 0;
+}
+
+.publication_head {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 100;
+  color: #fca475;
+  margin-bottom: 3rem;
+}
+
+.publication_head::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 18rem;
+  height: 0.06rem;
+  background-color: #5a5a5c;
+  top: -2rem;
+  margin-left: 21rem;
+}
+
+.publication_sections {
+  margin: 1rem 2rem 3rem 2rem;
+}
+
+.pub_sec_head {
+  color: aqua;
+  font-size: 1.6rem;
+}
+
+.pub_sec_body {
+  margin: 1rem 2rem;
+  list-style-type: decimal;
+}
+
+.pub_sec_body li {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.boldSp {
+  font-weight: 900;
+}
+
+.pub_sec_body li a {
+  color: aqua;
+}
+
+.pub_sec_body li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 350px) {
+  .publication_head::after {
+    display: none;
+  }
+}
