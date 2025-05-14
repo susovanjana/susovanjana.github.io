@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog - Dr. Susovan Jana</title>
+  <link rel="shortcut icon" href="./images/icons/title.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="mystyles.css">
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('show');
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuLinks = document.querySelectorAll('#nav-links a');
+      const navList = document.getElementById('nav-links');
+
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 768) {
+            navList.classList.remove('show');
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Dr. Susovan Jana</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul id="nav-links">
+      <li><a href="https://susovanjana.github.io/" target="_self">Home</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+  </nav>
+
+  <section id="blog">
+    <h2>Blog Posts</h2>
+
+    <div class="blog-post">
+      <h3>Future of academics in AI era</h3>
+      <p><i>May 30, 2025</i></p>
+      <p>
+        Coming Soon!
+      </p>
+    </div>
+	<div class="blog-post">
+      <h3>Coming Soon!</h3>
+      <p><i>-</i></p>
+      <p>
+        Coming Soon!
+      </p>
+    </div>
+		<div class="blog-post">
+      <h3>Coming Soon!</h3>
+      <p><i>-</i></p>
+      <p>
+        Coming Soon!
+      </p>
+    </div>
+    <!-- Add more blog posts similarly -->
+  </section>
+
+  <footer>
+    &copy; 2025 Dr. Susovan Jana. All rights reserved.
+  </footer>
+
+</body>
+</html>
