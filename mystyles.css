@@ -491,3 +491,16 @@
       color: white;
       margin-top: 40px;
     }
+
+.certificate-container {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.certificate-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
