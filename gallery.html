@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Dr. Susovan Jana</title>
+  <link rel="shortcut icon" href="./images/icons/title.png" type="image/x-icon"/>
+   <link rel="stylesheet" href="mystyles.css">
+  <script>
+  function toggleMenu() {
+    document.getElementById('nav-links').classList.toggle('show');
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuLinks = document.querySelectorAll('#nav-links a');
+    const navList = document.getElementById('nav-links');
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          navList.classList.remove('show');
+        }
+      });
+    });
+  });
+</script>
+</head>
+<body>
+
+  <nav class="navbar">
+  <div class="logo">Dr. Susovan Jana</div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <ul id="nav-links">
+    <li><a href="https://susovanjana.github.io/" target="_self">Home</a></li>
+    <li><a href="#photos">Photographs</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#videos">Videos</a></li>
+  </ul>
+  </nav>
+
+  <section id="photos">
+    <h2>Photographs</h2>
+	<h3><i>Delivered Keynote Speech on “Future of Industry 4.0: Converging AI, Machine Learning, and IoT” at 17th International Conference on Industrial Engineering and Management (ICIEM 2025- Online), April 29, 2025.</i></h3>
+    <div class="gallery-grid">
+      <img src="images\photographs\ICIEM_2025\ICIEM_P1.png" alt="Photographs">
+      <img src="images\photographs\ICIEM_2025\ICIEM_P2.png" alt="Photographs">
+	  <img src="images\photographs\ICIEM_2025\ICIEM_P3.png" alt="Photographs">
+      <!-- Add more photos here -->
+    </div>
+	<br>
+	<h3><i>Presented Paper in 2nd International Conference on Recent Advances in Artificial Intelligence & Smart Applications (RAAISA), Dec 14-15, 2024.</i></h3>
+    <div class="gallery-grid">
+      <img src="images\photographs\RAAISA_2024\P1.jpeg" alt="Photographs">
+      <img src="images\photographs\RAAISA_2024\P2.jpeg" alt="Photographs">
+      <!-- Add more photos here -->
+    </div>
+	<br>
+	<h3><i>Delivered a lecture on “Concepts and Components of IoT” in One Day Hands-on Workshop on AI & IoT at Rotary Club of Calcutta, Dec 13, 2024.</i></h3>
+    <div class="gallery-grid">
+      <img src="images\photographs\Workshop_AI_IOT_2024\P1.JPG" alt="Photographs">
+      <img src="images\photographs\Workshop_AI_IOT_2024\P2.JPG" alt="Photographs">
+      <img src="images\photographs\Workshop_AI_IOT_2024\P3.JPG" alt="Photographs">
+      <img src="images\photographs\Workshop_AI_IOT_2024\P4.JPG" alt="Photographs">
+      <img src="images\photographs\Workshop_AI_IOT_2024\P5.JPG" alt="Photographs">
+      <!-- Add more photos here -->
+    </div>
+	<br>
+	<h3><i>Delivered Lecture on Digital Technology & Multimedia Tools at National Council of Science Museums (NCSM), Ministry of Culture, Govt. of India., August, 2024.</i></h3>
+    <div class="gallery-grid">
+      <img src="images\photographs\NCSM_2024\NCSM_2024.jpg" alt="Photographs">
+      <!-- Add more photos here -->
+    </div>
+	<br>
+	<h3><i>Addressed new students of our department at Satya Sai Auditorium, July 18, 2025.</i></h3>
+    <div class="gallery-grid">
+      <img src="images\photographs\Satyasai_2024\P1.jpeg" alt="Photographs">
+	  <img src="images\photographs\Satyasai_2024\P2.jpeg" alt="Photographs">
+      <!-- Add more photos here -->
+    </div>
+	
+	<br>
+	<h3><i>Awarded Best IETE Students' Forum to IEM-ISF led by me at IETE, Kolkata, July 15, 2024.</i></h3>
+    <div class="gallery-grid">
+      <img src="images\photographs\BestISF_2024\BestISF_P1.jpg" alt="Photographs">
+	  <img src="images\photographs\BestISF_2024\BestISF_P2.jpg" alt="Photographs">
+	  <img src="images\photographs\BestISF_2024\BestISF_P3.jpg" alt="Photographs">
+      <!-- Add more photos here -->
+    </div>
+	
+	<br>
+	<h3><i>Delivered lecture and conducted hands on session in 3 Day Workshop on “Emerging Trends in Image Processing using MATLAB” organized by School of Education Technology, Jadavpur University held in December 19-21, 2022.</i></h3>
+    <div class="gallery-grid">
+	<img src="images\photographs\Workshop_IP_MATLAB_2022\P1.jpg" alt="Photographs">
+    <img src="images\photographs\Workshop_IP_MATLAB_2022\P2.jpg" alt="Photographs">
+	<img src="images\photographs\Workshop_IP_MATLAB_2022\P3.jpg" alt="Photographs">
+	<img src="images\photographs\Workshop_IP_MATLAB_2022\P4.jpg" alt="Photographs">
+	<img src="images\photographs\Workshop_IP_MATLAB_2022\P5.jpg" alt="Photographs">
+      <!-- Add more photos here -->
+    </div>
+	
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates</h2>
+	<h3><i>Recognition as Keynote Speaker in 17th International Conference on Industrial Engineering and Management (ICIEM 2025- Online), April 29, 2025</i></h3>
+    <div class="certificate-container">
+      <img src="certificates\ICIEM_2025.png" alt="Certificates">
+      <!-- Add more photos here -->
+    </div>
+	<br>
+	<h3><i>Wipro Certified Faculty on Java Full Stack</i></h3>
+    <div class="certificate-container">
+      <img src="certificates\WCF_Java_2024.jpg" alt="Certificates">
+      <!-- Add more photos here -->
+    </div>
+	<br>
+  </section>
+
+  <section id="videos">
+    <h2>Videos</h2>
+	<div class="video-grid">
+    <div class="video-item">
+      <h3><i>Day 1 of 3 Day Workshop on “Emerging Trends in Image Processing using MATLAB” organized by School of Education Technology, Jadavpur University held in December 19-21, 2022.</i></h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/eZGCpcYhwkg" 
+        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </div>
+	</div>
+  </section>
+
+  <footer>
+    &copy; 2025 Dr. Susovan Jana. All rights reserved.
+  </footer>
+
+</body>
+</html>
