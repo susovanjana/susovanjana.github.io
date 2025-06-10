@@ -1,1 +1,132 @@
-Under Construction.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IT Workshop (MATLAB) - 2025</title>
+  <link rel="shortcut icon" href="./images/icons/title.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="mystyles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">IT Workshop (MATLAB), 2025</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul id="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="#course-info">Course Info</a></li>
+      <li><a href="#announcement">Announcement</a></li>
+      <li><a href="#syllabus">Syllabus</a></li>
+      <li><a href="#instructors">Instructors</a></li>
+      <li><a href="#materials">Study Materials</a></li>
+      <li><a href="#assignments">Lab Assignments</a></li>
+      <li><a href="#books">Books</a></li>
+    </ul>
+  </nav>
+
+<section id="course-info">
+  <h2>Course Information</h2>
+  <table style="width:100%; border-collapse: collapse;" border="0" cellpadding="8">
+  
+    <tr>
+      <td><strong>Course Name</strong></td>
+      <td>IT Workshop (MATLAB)</td>
+    </tr>
+    <tr>
+      <td><strong>Course Code</strong></td>
+      <td>PCCCS372</td>
+    </tr>
+    <tr>
+      <td><strong>Credit</strong></td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><strong>Prerequisite</strong></td>
+      <td>Basic Mathematical Knowledge</td>
+    </tr>
+    <tr>
+      <td><strong>Summary</strong></td>
+      <td>The syllabus covers fundamental to advanced MATLAB skills, starting with an introduction to MATLAB environment, basic operations, and data types. It includes vector/matrix operations, scripting, functions, debugging, conditional programming, data handling, and visualization in 2D and 3D. The course concludes with GUI development using App Designer, exploring interface components, event-driven programming, and app deployment.</td>
+    </tr>
+  </table>
+</section>
+
+
+  <section id="announcement">
+    <h2>Announcement</h2>
+    <ul class="custom-ul">
+      <li>📢 First class will be held on <b>July TBD,2025 at 10:00 AM</b> in LG TBD.</li>
+      <li>📝 Lab Assignments 1–5 must be submitted by <b>July TBD, 2025</b>.</li>
+	  <li>📄 Detailed <b><a href="documents/itworkshop/lesson_plan_theory.pdf" target="_blank">Lesson Plan for Theory</a></b> is now available.</li>
+    </ul>
+  </section>
+
+  <section id="syllabus">
+    <h2>Syllabus</h2>
+    <ul class="custom-ul">
+     <li><b>Introduction to MATLAB:</b> Introduction, Why MATLAB? History, it’s strengths, Competitors, Starting MATLAB, Using MATLAB as a calculator, Quitting MATLAB Basics commands in MATLAB, Basic Operations, MATLAB-Data types, Rules about variable names, Predefined variables etc.</li>
+     <li><b>Vector, Matrix, Array, Cell and String Operations:</b> Vector, Matrix, Array Addressing, Built-in functions, Mathematical Operations, Dealing with strings (Array of characters), Array of array (cell) concept.</li>
+	<li><b>Script, Function, and Debugging:</b> Script file, Input commands, Output commands, Structure of function file, user defined functions, Inline functions, feval command, Comparison between script file and function file, Debugging script.</li>	
+	<li><b>Complex programming and working with dataset:</b> Conditional statements and Loop, Relational and Logical Operators, if-else statements, switch-case statements, for loop, while loop, Special commands (break and continue), Table, import data from a large database, Export data to own file or database.</li>	
+	<li><b>Data Visualization using MATLAB:</b> 2D Plotting: In-built functions for plotting, Multiple plotting with special graphics, Curve fitting, Interpolation, Basic fitting interface.
+    3D Plotting: Use of meshgrid function, Mesh plot, Surface plot, Plots with special graphics.</li>	
+	<li><b>Graphical User Interface Design:</b> GUI in MATLAB, App designer, Component library (Edit Field, Text Area, Label, Button, Check Box, Drop Down, List Box, Button Group, Slider, Spinner etc.), Containers (Panel, Tab Group), Instrumentation, Component browser, Design view and code view, Call back function, Exporting App. </li>		  
+    </ul>
+  </section>
+
+  <section id="instructors">
+    <h2>Instructors</h2>
+    <ul class="custom-ul">
+      <li><strong><a href="index.html">Dr. Susovan Jana</a></strong> — Associate Professor, CSE (IoT), IEM, Kolkata</li>
+	  <li><strong>Dr. Avipsita Chatterjee</strong> — Assistant Professor, CSE (IoT), IEM, Kolkata</li>
+	  <li><strong>Dr. Koushik Dutta</strong> — Associate Professor, CSE (IoT), IEM, Kolkata</li>
+    </ul>
+  </section>
+
+  <section id="materials">
+    <h2>Study Materials</h2>
+    <ul class="custom-ul">
+      <li><a href="documents/itworkshop/matlab_basics.pdf" target="_blank">MATLAB Basics PDF</a></li>
+    </ul>
+  </section>
+
+  <section id="assignments">
+    <h2>Lab Assignments</h2>
+    <ul class="custom-ul">
+	<li><a href="documents/itworkshop/lab_assignments.pdf" target="_blank">List of Assignments</a></li>
+    <li><a href="documents/itworkshop/lab_assignment1.pdf" target="_blank">Assignment 1: Introduction to MATLAB Interface</a></li>
+    </ul>
+  </section>
+
+  <section id="books">
+    <h2>Books</h2>
+    <ul class="custom-ul">
+      <li>Text: Stephen J. Chapman, “MATLAB Programming for Engineers (6e),” Cengage.</li>
+      <li>Reference: S. Swapna Kumar and S. V. B. Lenina, “MATLAB: Easy Way of Learning,” PHI.</li>
+    </ul>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('show');
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuLinks = document.querySelectorAll('#nav-links a');
+      const navList = document.getElementById('nav-links');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 768) {
+            navList.classList.remove('show');
+          }
+        });
+      });
+    });
+  </script>
+
+  <footer>
+    &copy; 2025 Dr. Susovan Jana. All rights reserved.
+  </footer>
+
+</body>
+</html>
