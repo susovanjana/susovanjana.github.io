@@ -505,3 +505,14 @@
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+ .blinking-new {
+      color: red;
+      font-weight: bold;
+      margin-left: 10px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
